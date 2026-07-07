@@ -1,0 +1,176 @@
+import {
+  HiOutlineUsers,
+  HiOutlineCurrencyDollar,
+  HiOutlineBolt,
+  HiOutlineClipboardDocumentCheck,
+  HiOutlineArrowTrendingUp,
+  HiOutlineArrowTrendingDown,
+} from 'react-icons/hi2';
+
+export const statsData = [
+  {
+    id: 'total-users',
+    title: 'Total Users',
+    value: 28453,
+    prefix: '',
+    suffix: '',
+    change: 12.5,
+    trend: 'up',
+    icon: HiOutlineUsers,
+    trendIcon: HiOutlineArrowTrendingUp,
+    gradient: 'linear-gradient(135deg, #3b5bf7 0%, #8b5cf6 100%)',
+    lightBg: '#eef2ff',
+    darkBg: 'rgba(59, 91, 247, 0.15)',
+  },
+  {
+    id: 'revenue',
+    title: 'Revenue',
+    value: 94250,
+    prefix: '$',
+    suffix: '',
+    change: 8.2,
+    trend: 'up',
+    icon: HiOutlineCurrencyDollar,
+    trendIcon: HiOutlineArrowTrendingUp,
+    gradient: 'linear-gradient(135deg, #10b981 0%, #34d399 100%)',
+    lightBg: '#ecfdf5',
+    darkBg: 'rgba(16, 185, 129, 0.15)',
+  },
+  {
+    id: 'active-sessions',
+    title: 'Active Sessions',
+    value: 1842,
+    prefix: '',
+    suffix: '',
+    change: -3.1,
+    trend: 'down',
+    icon: HiOutlineBolt,
+    trendIcon: HiOutlineArrowTrendingDown,
+    gradient: 'linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%)',
+    lightBg: '#fffbeb',
+    darkBg: 'rgba(245, 158, 11, 0.15)',
+  },
+  {
+    id: 'tasks-completed',
+    title: 'Tasks Completed',
+    value: 1256,
+    prefix: '',
+    suffix: '',
+    change: 24.3,
+    trend: 'up',
+    icon: HiOutlineClipboardDocumentCheck,
+    trendIcon: HiOutlineArrowTrendingUp,
+    gradient: 'linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%)',
+    lightBg: '#f5f3ff',
+    darkBg: 'rgba(139, 92, 246, 0.15)',
+  },
+];
+
+export const revenueChartData = {
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  datasets: [
+    {
+      label: 'Revenue 2026',
+      data: [12400, 15800, 14200, 18600, 22100, 19800, 24500, 28900, 26300, 31200, 29800, 34500],
+    },
+    {
+      label: 'Revenue 2025',
+      data: [9800, 11200, 10500, 14800, 16300, 15200, 19100, 22400, 20100, 25600, 23200, 28100],
+    },
+  ],
+};
+
+export const activityChartData = {
+  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+  datasets: [
+    {
+      label: 'Page Views',
+      data: [4200, 5800, 4900, 6100, 5500, 3200, 2800],
+    },
+    {
+      label: 'Unique Visitors',
+      data: [2100, 3200, 2800, 3600, 3100, 1800, 1500],
+    },
+  ],
+};
+
+export const recentActivities = [
+  {
+    id: 1,
+    name: 'Arjun Mehta',
+    avatar: 'AM',
+    email: 'arjun.mehta@example.com',
+    action: 'Completed onboarding flow',
+    status: 'Completed',
+    date: '2026-07-07',
+    time: '09:24 AM',
+  },
+  {
+    id: 2,
+    name: 'Priya Sharma',
+    avatar: 'PS',
+    email: 'priya.sharma@example.com',
+    action: 'Submitted quarterly report',
+    status: 'Pending',
+    date: '2026-07-06',
+    time: '03:15 PM',
+  },
+  {
+    id: 3,
+    name: 'Rahul Verma',
+    avatar: 'RV',
+    email: 'rahul.verma@example.com',
+    action: 'Updated payment settings',
+    status: 'Processing',
+    date: '2026-07-06',
+    time: '11:42 AM',
+  },
+  {
+    id: 4,
+    name: 'Sneha Patel',
+    avatar: 'SP',
+    email: 'sneha.patel@example.com',
+    action: 'Account verification failed',
+    status: 'Rejected',
+    date: '2026-07-05',
+    time: '05:30 PM',
+  },
+  {
+    id: 5,
+    name: 'Vikram Singh',
+    avatar: 'VS',
+    email: 'vikram.singh@example.com',
+    action: 'Created new project workspace',
+    status: 'Completed',
+    date: '2026-07-05',
+    time: '10:08 AM',
+  },
+  {
+    id: 6,
+    name: 'Ananya Reddy',
+    avatar: 'AR',
+    email: 'ananya.reddy@example.com',
+    action: 'Deployed staging environment',
+    status: 'Processing',
+    date: '2026-07-04',
+    time: '02:55 PM',
+  },
+  {
+    id: 7,
+    name: 'Karthik Nair',
+    avatar: 'KN',
+    email: 'karthik.nair@example.com',
+    action: 'Reviewed pull request #142',
+    status: 'Completed',
+    date: '2026-07-04',
+    time: '08:30 AM',
+  },
+];
+
+export const notifications = [
+  { id: 1, text: 'New user registration: Priya S.', time: '2 min ago', read: false },
+  { id: 2, text: 'Server CPU usage exceeded 90%', time: '15 min ago', read: false },
+  { id: 3, text: 'Monthly report is ready to download', time: '1 hr ago', read: false },
+  { id: 4, text: 'Payment received: $2,450.00', time: '3 hrs ago', read: true },
+  { id: 5, text: 'Scheduled maintenance tonight at 11 PM', time: '5 hrs ago', read: true },
+];
