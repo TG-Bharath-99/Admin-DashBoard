@@ -29,36 +29,16 @@
   overflow: hidden;
 }
 
-.sidebar-logo-icon {
-  width: 34px;
+.sidebar-full-logo {
   height: 34px;
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  overflow: hidden;
-}
-
-.sidebar-logo-icon img {
-  width: 100%;
-  height: 100%;
+  width: auto;
   object-fit: contain;
-}
-
-.sidebar-logo-text {
-  font-size: var(--font-xl);
-  font-weight: 700;
-  color: var(--text-inverse);
-  white-space: nowrap;
-  opacity: 1;
+  object-position: left center;
   transition: opacity var(--transition-base);
-  letter-spacing: -0.3px;
 }
 
-.sidebar.collapsed .sidebar-logo-text {
-  opacity: 0;
-  pointer-events: none;
+.sidebar.collapsed .sidebar-full-logo {
+  /* No special opacity needed, overflow: hidden on .sidebar-logo will crop the text part */
 }
 
 /* Navigation */

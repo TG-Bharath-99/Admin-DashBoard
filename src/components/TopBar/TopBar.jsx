@@ -98,7 +98,7 @@ export default function TopBar({ collapsed, onMenuClick, searchQuery, setSearchQ
         {/* Profile */}
         <div className="topbar-profile" id="user-profile">
           <div className="topbar-profile-avatar">BK</div>
-          <span className="topbar-profile-name">Bharath K</span>
+          <span className="topbar-profile-name">Bharath U</span>
         </div>
       </div>
     </header>
